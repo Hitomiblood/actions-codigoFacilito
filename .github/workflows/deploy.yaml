@@ -28,4 +28,4 @@ jobs:
     - name: Hola Mundo 2
       run: echo "Hola Mundo 2"
     - name: verificando variable
-      run: echo "La variable es: ${{ needs.first_jobs.outputs.my_variable }}"
+      run: echo "La variable es ${{ needs.first_jobs.outputs.my_variable }}"
