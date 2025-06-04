@@ -11,13 +11,7 @@ jobs:
 
     steps:
       - name: working directory
-        run: ls -al
-
-      - name: Actions
-        uses: actions/checkout@v4
-
-      - name: working dir after checkout
-        run: ls -al
+        run: echo $GITHUB_OUTPUT
 
 
   second_jobs:
