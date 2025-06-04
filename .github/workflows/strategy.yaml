@@ -10,9 +10,9 @@ jobs:
       matrix:
         message: [Hello, World, Goodbye, Universe]
       
-      steps:
-        - name: Print Message
-          run: echo "${{ matrix.message }}"
+    steps:
+      - name: Print Message
+        run: echo "${{ matrix.message }}"
           
 
 
