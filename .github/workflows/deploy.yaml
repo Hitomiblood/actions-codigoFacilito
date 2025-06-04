@@ -18,4 +18,4 @@ jobs:
 
     steps:
     - name: Hola Mundo 2
-      run: echo "Hola Mundo 2 $NAME"
+      run: echo "Hola Mundo 2 ${{ env.NAME }}"
