@@ -11,8 +11,11 @@ jobs:
 
     steps:
       - name: working directory
+        id: step_1
         run: echo "my_variable=HolaMundo" >> $GITHUB_OUTPUT
 
+      - name: Obtener Mensaje
+        run: echo "${{ steps.step_1.outputs.my_variable }}"
 
   second_jobs:
     if: ${{ github.ref == 'refs/heads/main' }}
