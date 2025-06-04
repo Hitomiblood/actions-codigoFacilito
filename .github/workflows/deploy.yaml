@@ -4,6 +4,7 @@ on: push
 
 jobs:
   first_jobs:
+    name: Tutorial CódigoFacilito
     runs-on: ubuntu-latest
     env:
       NAME: CodigoFacilito
@@ -18,4 +19,4 @@ jobs:
 
     steps:
     - name: Hola Mundo 2
-      run: echo "Hola Mundo 2 $NAME"
+      run: echo "Hola Mundo 2"
