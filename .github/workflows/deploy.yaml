@@ -6,6 +6,8 @@ jobs:
   first_jobs:
     name: Tutorial CódigoFacilito
     runs-on: ubuntu-latest
+    outputs:
+      my_variable: ${{ steps.step_1.outputs.my_variable }}
     env:
       NAME: CodigoFacilito
 
@@ -25,3 +27,5 @@ jobs:
     steps:
     - name: Hola Mundo 2
       run: echo "Hola Mundo 2"
+    - name: verificando variable
+      run: echo "La variable es: ${{ needs.first_jobs.outputs.my_variable }}"
