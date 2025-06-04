@@ -9,7 +9,7 @@ jobs:
       NAME: CodigoFacilito
     steps:
     - name: Hola Mundo
-      run: echo "Hola Mundo"
+      run: echo "Hola Mundo $NAME"
       
   second_jobs:
     if: ${{ github.ref == 'refs/heads/main' }}
@@ -18,4 +18,4 @@ jobs:
 
     steps:
     - name: Hola Mundo 2
-      run: echo "Hola Mundo 2 ${{ env.NAME }}"
+      run: echo "Hola Mundo 2 $NAME"
